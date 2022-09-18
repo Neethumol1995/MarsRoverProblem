@@ -7,22 +7,17 @@ namespace MarsRoverProblem.Repository.Command
 {
     public class MoveForward : Provider.Command
     {
-        
         // maximum limit of rover
-        
         private List<int> maxLst = new List<int>();
 
         
         // constructor for using maxLst
-        
         public MoveForward(List<int> maxLst)
         {
             this.maxLst = maxLst;
         }
 
-       
         // execute movement
-        
         public Coordinates Execute(Coordinates coordinates)
         {
             switch (coordinates.Dir)

@@ -9,28 +9,24 @@ namespace MarsRoverProblem.Tests.RepositoryTest
 {
     public class ExecuteActionTest
     {
-        /// <summary>
-        /// command reference
-        /// </summary>
+        
+        // command reference
         private readonly Command _command;
 
-        /// <summary>
-        /// invoker reference
-        /// </summary>
+        
+        // invoker reference
         private readonly Invoker _invoker;
 
-        /// <summary>
-        /// constructor for instantiating references
-        /// </summary>
+        
+        // constructor for instantiating references
         public ExecuteActionTest()
         {
             _command = A.Fake<Command>();
             _invoker = new ExecuteAction();
         }
 
-        /// <summary>
-        /// test for StartMovingSync
-        /// </summary>
+        
+        // test for StartMovingSync
         [Fact]
         public void StartMovingSync_Test()
         {

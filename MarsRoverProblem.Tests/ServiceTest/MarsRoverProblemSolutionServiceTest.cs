@@ -10,28 +10,24 @@ namespace MarsRoverProblem.Tests.ServiceTest
 {
     public class MarsRoverProblemSolutionServiceTest
     {
-        /// <summary>
-        /// invoker reference
-        /// </summary>
+        
+        // invoker reference
         private readonly Invoker _invoker;
 
-        /// <summary>
-        /// IMarsRoverProblemSolutionService reference
-        /// </summary>
+        
+        // IMarsRoverProblemSolutionService reference
         private readonly IMarsRoverProblemSolutionService _marsRoverProblemSolutionService;
 
-        /// <summary>
-        /// constructor for instantiating references
-        /// </summary>
+        
+        // constructor for instantiating references
         public MarsRoverProblemSolutionServiceTest()
         {
             _invoker = A.Fake<Invoker>();
             _marsRoverProblemSolutionService = new MarsRoverProblemSolutionService();
         }
 
-        /// <summary>
-        /// test for MoveRoverSync method
-        /// </summary>
+        
+        // test for MoveRoverSync method
         [Theory]
         [InlineData(true)]
         [InlineData(false)]

@@ -6,7 +6,6 @@ namespace MarsRoverProblem.Repository.Provider
     {
         
         // execute rover rotation/movement
-        
         public Coordinates Execute(Coordinates coordinates);
     }
 }

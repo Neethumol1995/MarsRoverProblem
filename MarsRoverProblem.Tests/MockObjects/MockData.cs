@@ -9,25 +9,20 @@ namespace MarsRoverProblem.Tests.MockObjects
     
     public static class MockData
     {
-        /// <summary>
-        /// max coordinates
-        /// </summary>
+        
+        // max coordinates
         public static string[] MaxPoints = { "5", "5" };
 
-        /// <summary>
-        /// current rover location
-        /// </summary>
+       
+        // current rover location
         public static string[] CurrentLocation = { "1", "2", "N" };
 
-        /// <summary>
-        /// commands for moving rover
-        /// </summary>
+       
+        // commands for moving rover
         public static string Movement = "LMLMLMLMM";
 
-        /// <summary>
-        /// coordinates of rover location
-        /// </summary>
-        /// <returns></returns>
+        
+        // coordinates of rover location
         public static Coordinates Coordinates()
         {
             return new Coordinates
@@ -38,9 +33,8 @@ namespace MarsRoverProblem.Tests.MockObjects
             };
         }
 
-        /// <summary>
-        /// list of max coordinates
-        /// </summary>
+       
+        // list of max coordinates
         public static List<int> MaxLst => new List<int> { Convert.ToInt32(MaxPoints[0]), Convert.ToInt32(MaxPoints[1]) };
     }
 }

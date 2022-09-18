@@ -6,7 +6,6 @@ namespace MarsRoverProblem.Repository.Provider
     {
         
         // start rover movement
-        
         Coordinates StartMoving(Command command, Coordinates coordinates);
     }
 }

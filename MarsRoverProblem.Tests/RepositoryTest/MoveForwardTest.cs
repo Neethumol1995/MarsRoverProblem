@@ -9,29 +9,24 @@ namespace MarsRoverProblem.Tests.RepositoryTest
 {
     public class MoveForwardTest
     {
-        /// <summary>
-        /// command reference
-        /// </summary>
+        
+        // command reference
         private readonly Command _command;
 
-        /// <summary>
-        /// max coordinates
-        /// </summary>
+        
+        // max coordinates
         private readonly List<int> _maxLst;
 
-        /// <summary>
-        /// constructor for instantiating references
-        /// </summary>
+        
+        // constructor for instantiating references
         public MoveForwardTest()
         {
             _maxLst = MockData.MaxLst;
             _command = new MoveForward(_maxLst);
         }
 
-        /// <summary>
-        /// test for execute
-        /// </summary>
-        /// <param name="directions"></param>
+        
+        // test for execute
         [Theory]
         [InlineData(Directions.N)]
         [InlineData(Directions.E)]
@@ -68,13 +63,9 @@ namespace MarsRoverProblem.Tests.RepositoryTest
             Assert.Equal(coordinates, result);
         }
 
-        /// <summary>
-        /// test for Execute failure
-        /// </summary>
-        /// <param name="isYExceed"></param>
-        /// <param name="isXExceed"></param>
-        /// <param name="isYLess"></param>
-        /// <param name="isXLess"></param>
+        
+        // test for Execute failure
+        
         [Theory]
         [InlineData(true, false, false, false)]
         [InlineData(false, true, false, false)]

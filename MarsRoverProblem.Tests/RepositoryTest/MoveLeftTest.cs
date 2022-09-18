@@ -8,22 +8,19 @@ namespace MarsRoverProblem.Tests.RepositoryTest
 {
     public class MoveLeftTest
     {
-        /// <summary>
-        /// command reference
-        /// </summary>
+        
+        // command reference
         private readonly Command _command;
 
-        /// <summary>
-        /// constructor for instantiating references
-        /// </summary>
+        
+        // constructor for instantiating references
         public MoveLeftTest()
         {
             _command = new MoveLeft();
         }
 
-        /// <summary>
-        /// test for Execute method
-        /// </summary>
+
+        // test for Execute method
         /// <param name="directions"></param>
         [Theory]
         [InlineData(Directions.N)]
